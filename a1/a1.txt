@@ -1,0 +1,21 @@
+Question 1:
+/home/tedrick_tang
+Question 2:
+cpuinfo
+meminfo
+
+Question 3:
+os-release, version 22.04
+
+Question 4:
+For the 2nd:
+ Times occurred  Pickup ID
+  13354          161.0
+  12421          237.0
+  11138          236.0
+
+For the 10th:
+ Times occurred  Pickup ID
+  13290          161.0
+  12956          237.0
+  11278          236.0

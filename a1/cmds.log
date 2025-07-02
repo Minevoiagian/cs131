@@ -1,0 +1,17 @@
+Question 1 Command:
+  314  echo $HOME >> a1.txt
+  316  echo a1.txt
+  318  history | grep echo
+  319  history | grep echo $HOME >> cmds.log
+  320  history | grep echo >> cmds.log
+Question 2 Command:
+  328  ls /proc/
+  331  ls /proc/ | grep cpu
+  332  ls /proc/ | grep mem
+  333  history | grep ls >> cmds.log
+Question 3 Command:
+  340  ls /etc/ | grep os >> a1.txt
+  344  history | grep "ls /etc/ | grep os" >> cmds.log
+Question 4 Command:
+grep "2019-04-02" 2019-04.csv | cut -d ',' -f 8 | sort | uniq -c | sort -r | head -n 3
+grep "2019-04-10" 2019-04.csv | cut -d ',' -f 8 | sort | uniq -c | sort -r | head -n 3

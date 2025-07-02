@@ -7,7 +7,7 @@ Execute "datacollector.sh" from the BASH shell
 You will be prompted for a file to download from the internet
 Provide the complete link to said file
 The program will unzip the file if necessary
-Assuming the zip contains CSVs, the program will process said CSVs, return output the column number, labels, minimum, maximum, mean, and standard deviation for each column
+Assuming the zip contains CSVs, the program will process said CSVs, return output the column number, labels, minimum, maximum, mean, and standard deviation for each column to "summary.md"
 
 Example run
 

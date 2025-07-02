@@ -20,6 +20,9 @@ fileCount=$(ls -l| grep .csv | wc -l)
 #make an array of CSV files
 fileNames=(*.csv)
 
+#overwrite any previous summaries created
+echo "" > summary.md
+
 for fileNum in "${fileNames[@]}"; do
 	#get the amount of columns by
 	#Take the first line of a file, remove all semicolons,
@@ -32,8 +35,9 @@ for fileNum in "${fileNames[@]}"; do
 	rowCount=$(cat "$fileNum" | wc -l)
 	((rowCount--))
 	
-	echo
-	echo "Feature summary for " $fileNum
+	echo "" >> summary.md
+
+	echo "Feature summary for " $fileNum >> summary.md
 	#compute min, max, mean, stdDev, pass column and row count to awk
 	awk -F';' -v nColumn="$columnCount" -v nRow="$rowCount" '
 	NR==1{
@@ -85,7 +89,7 @@ for fileNum in "${fileNames[@]}"; do
 		
 	}
 }
-' "$fileNum"
+' "$fileNum" >> summary.md
 
 
 done

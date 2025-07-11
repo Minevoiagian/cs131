@@ -1,0 +1,32 @@
+Grades for Alice
+--------------------
+Total score: 253.00
+Average score: 84.33
+Status: Pass
+
+Grades for Bob
+--------------------
+Total score: 246.00
+Average score: 82.00
+Status: Pass
+
+Grades for Charlie
+--------------------
+Total score: 270.00
+Average score: 90.00
+Status: Pass
+
+Grades for David
+--------------------
+Total score: 195.00
+Average score: 65.00
+Status: Fail
+
+Grades for Eve
+--------------------
+Total score: 265.00
+Average score: 88.33
+Status: Pass
+
+Best Scoring Student:  Charlie
+Worst Scoring Student: David

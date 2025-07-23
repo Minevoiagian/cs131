@@ -1,0 +1,5 @@
+from pyspark.sql import SparkSession
+filePath = "gs://for_spark/student_habits_performance.csv"
+spark = SparkSession.builder.appName("Airbnb Listings").getOrCreate()
+airbnbDF = spark.read.csv(filePath, header=True,inferSchema = True)
+airbnbDF.select("student_id","age","gender","study_hours_per_day","social_media_hours","netflix_hours","part_time_job","attendance_percentage","sleep_hours","diet_quality","exercise_frequency","parental_education_level","internet_quality","mental_health_rating","extracurricular_participation","exam_score").show(5)
